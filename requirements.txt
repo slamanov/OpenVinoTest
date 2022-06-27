@@ -1,0 +1,6 @@
+opencv-python
+openvino
+openvino-dev
+pytest
+xdist
+pyhamcrest
