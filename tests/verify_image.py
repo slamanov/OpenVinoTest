@@ -90,7 +90,7 @@ net_PVB, exec_net_PVB = person_vehicle_bike_detection_model_init()
 # загрузка изображения
 
 frame = cv.imread(
-    'test_bicycle.jpg')  # в переменную img возвращается NumPy массив, элементы которого соответствуют пикселям
+    'bicycle.jpg')  # в переменную img возвращается NumPy массив, элементы которого соответствуют пикселям
 # вызов функции,в которой происходит обнаружение людей /транспортных средств /велосипедов
 
 frame = person_vehicle_bike_detection(frame, net_PVB, exec_net_PVB)

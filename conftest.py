@@ -25,12 +25,12 @@ ROOT_DIR = Path(os.path.dirname(os.path.abspath(__file__)))
 #         help=f'Path to the age-gender-recognition-retail'
 #     )
 #     # parser.addoption('-mPVB', )
-
-
-@pytest.fixture(autouse=True)
-def select_model(request):
-    models_cmd_options = {
-        'age_gender_detection_model': "--age_gender_detection_model"
-    }
-    # return request.config.getoption(models_cmd_options[model_name])
-    # return request.config.getoption("--age_gender_detection_model")
+#
+#
+# @pytest.fixture(autouse=True)
+# def select_model(request):
+#     models_cmd_options = {
+#         'age_gender_detection_model': "--age_gender_detection_model"
+#     }
+#     # return request.config.getoption(models_cmd_options[model_name])
+#     # return request.config.getoption("--age_gender_detection_model")
