@@ -4,3 +4,4 @@ openvino-dev
 pytest
 xdist
 pyhamcrest
+allure-pytest
