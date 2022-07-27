@@ -1,7 +1,7 @@
-from models_execution.basic_model_run import BasicModelRun
+from models_execution.basic_model_run import ModelRun
 
 
-class AgeGenderRecognitionRetailModelRun(BasicModelRun):
+class AgeGenderRecognitionRetailModelRun(ModelRun):
 
     dim = (62, 62)
 

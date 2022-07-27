@@ -5,13 +5,13 @@ import cv2 as cv
 import pytest
 from hamcrest import *
 
-from models_execution.basic_model_run import AgeGenderRecognitionRetailModelRun
+from models_execution.basic_model_run import ModelRun
 
 
 @pytest.mark.smoke
 @pytest.mark.parametrize("device_name", ["CPU"])
 def test_women_age_gender_recognition(device_name):
-    age_gender_model_run = AgeGenderRecognitionRetailModelRun("age-gender-recognition-retail-0013", device_name)
+    age_gender_model_run = ModelRun("age-gender-recognition-retail-0013", device_name)
     net_PVB, exec_net_PVB = age_gender_model_run.model_init()
     model_result = age_gender_model_run.get_model_run_output(cv.imread(os.path.dirname(os.path.realpath(__file__))
                                                                        + '/women_face.jpeg'), net_PVB, exec_net_PVB)
@@ -22,7 +22,7 @@ def test_women_age_gender_recognition(device_name):
 @pytest.mark.smoke
 @pytest.mark.parametrize("device_name", ["CPU"])
 def test_men_age_gender_recognition(device_name):
-    age_gender_model_run = AgeGenderRecognitionRetailModelRun("age-gender-recognition-retail-0013", device_name)
+    age_gender_model_run = ModelRun("age-gender-recognition-retail-0013", device_name)
     net_PVB, exec_net_PVB = age_gender_model_run.model_init()
     model_result = age_gender_model_run.get_model_run_output(cv.imread(os.path.dirname(os.path.realpath(__file__))
                                                                        + '/women_face.jpeg'), net_PVB, exec_net_PVB)

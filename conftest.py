@@ -3,7 +3,6 @@ import sys
 import pytest
 from pathlib import Path
 
-from models_execution.basic_model_run import AgeGenderRecognitionRetailModelRun
 
 ROOT_DIR = Path(os.path.dirname(os.path.abspath(__file__)))
 
